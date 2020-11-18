@@ -18,8 +18,9 @@ let name = customer.name.first + ' ' + customer.name.last
     customerdisplay.appendChild(customeremail)
     customeremail.innerText = email
 
-    let address = customer.location.street + '\n' + customer.location.city + ', ' + 
-    customer.location.state + ' ' + customer.location.postcode
+    let address = customer.location.street.number + " " + customer.location.street.name 
+    + ", " + customer.location.state + ' ' + customer.location.postcode 
     let customeraddress = document.createElement('p')
     customerdisplay.appendChild(customeraddress)
     customeraddress.innerText = address
+}
